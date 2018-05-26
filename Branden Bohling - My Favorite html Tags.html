@@ -1,9 +1,10 @@
+<!-- Branden Bohling CIS255 Assignment 2-->
 
 <head>
 	<title>Branden Bohling - My Favorite html Tags </title>
 	
 	<style>
-		.twoColumn {column-count: 2;}
+		
 		body {
 			max-width: 1000px;
 			margin: auto;
@@ -25,37 +26,67 @@
 	</header>
 	
 	<main>
-	
-		<div class="twoColumn">
-	
-		<section>
-	
-		<strong>Introduction</strong>. The purpose of this essay is to describe my three favorite Hypertext Markup Language (HTML) tags. I prepared this HTML document as a sample for students learning HTML. 
-	
+		<strong> Purpose of this page </strong> This html page was made to demonstrate a few of my favorite HTML tags and their purpose, these may not be the <b>most </b> useful tags, but I find them interesting and fun to use in their own right
 		<hr /></section><section>
-	
-		<p><strong>&lt;a&gt;</strong>. The <strong>anchor</strong> tag is my #1 favorite HTML tag because it most fundamentally embodies the purpose of the World Wide Web: to enable documents to be linked to other documents. According to <a target="_blank" href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html">w3.org</a>, "An anchor is a piece of text which marks the beginning and/or the end of a hypertext link." So without anchor tags, links would not exist. And without links the Web would not exist. That's why anchor tags seem pretty darn important. </p>
-	
-		<hr /></section><section>
-	
-		<p><strong>&lt;hr&gt;</strong>. The <strong>horizontal rule</strong> tag is often overlooked, but it can be quite handy for organizing sections of a web page. </p>
-	
-		<hr /></section><section>
-	
-		<p><strong>&lt;svg&gt;</strong>.  Many people are unaware of the <strong>Scalable Vector Graphics</strong> (SVG) tag. SVG defines vector-based graphics in eXtensible Markup Language (XML) format.</p>
-		<svg width="100" height="100">
-			<circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="white" />
-		</svg>
-	
-		<hr /></section><section>
-	
-		<p><strong>Conclusion</strong>. We may debate which tags are <i>really</i> the best, but in my opinion, the anchor tag, the horizontal rule tag and the SVG tag stand out as particularly useful and/or interesting. For the moment at least, they are my favorites. </p>
-	
-		</section>
-	
-		</div>
-	
-		</main>
+		<ol>
+				<li> <strong> &lt;ol or ul&gt; </strong> 
+					The list tag in HTML is one which I will be using for the rest of this page in order to list my favorite html tags. The <strong> &lt;ol&gt; </strong> tag defines an ordered list
+					1,2,3,... (the one I am currently using) while the <strong> &lt;ul&gt; </strong> tag defines a list which is simply bullet points. This is very useful for informitive websites such
+					as this one. There are many styles to choose from using this tag including:
+					<br>
+					<ul style="list-style-type:circle">
+						<li>Lists</li>
+						<li>Using</li>
+						<li>Circles</li>
+					</ul>
+					<br/>
+					<ul style="list-style-type:square">
+						<li>Lists</li>
+						<li>Using</li>
+						<li>Squares</li>
+					</ul>
+					<br/>
+					<ul style="list-style-type:disc">
+						<li>Lists</li>
+						<li>Using</li>
+						<li>Discs</li>
+					</ul>
+				
+				</li> 
+				<li><strong> &lt;fieldset&gt; </strong> 
+				Another tag which I find fun and useful for organizing web pages is the <strong> &lt;fieldset&gt; </strong> tag. This tag allows for a map-like legend to show a certain patch of text.
+				I have used the fieldset tag down below in the Course Lookup section as I thought It would make the section stand out a bit more. The fieldset tag can be used with the legend tag
+				to label the field
+				<form>
+
+				</li>
+				<li><strong> &lt;span&gt; </strong> <span title="My 3rd favorite html tag">The <strong> &lt;span&gt; </strong> tag allows for text to appear when a certain element is 
+				scrolled over. This is particuarly useful for adding descriptions to pictures or extra information to blocks of text. Scroll over this text to see the message behind
+				it.</span></li>
+		</ol>
+			<fieldset>
+			<legend><strong>Course Lookup:</strong></legend>
+			<form action='https://csis.svsu.edu/~gpcorser/php/courses.php'>
+				<table>
+				<tr>
+					<td>Course Prefix (Department)</td>
+					<td><input type='text' name='prefix'> </td>
+				</tr>
+  
+				<tr>
+					<td>Course</td>
+					<td><input type='text' name='courseNumber'> </td>
+				</tr>
+				
+				<tr>
+					<td>Instructor  </td>
+					<td> <input type='text' name='instructor'> </td>
+				</tr>
+			</table>
+			<input type='submit' value='Submit'>
+			</form>
+			</fieldset>
+	</main>
 
 	<footer>
 		<p> Branden Bohling CIS 255 Spring 2018	</p>
