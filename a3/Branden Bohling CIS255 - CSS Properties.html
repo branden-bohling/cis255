@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<!--
+	1. font-size*		see external file, bohlingfavoriteproperties.css
+	2.font-family*		see external file, bohlingfavoriteproperties.css
+	3. font-weight*	see external file, bohlingfavoriteproperties.css
+	4. text-align		see external file, bohlingfavoriteproperties.css
+	aligns the text to a certain area: center, right, left
+	5. max-width 		see external file, bohlingfavoriteproperties.css
+	defines the maximum width of a property
+	6. background*	see external file, bohlingfavoriteproperties.css
+	7. opacity*		see external file, bohlingfavoriteproperties.css
+	8. margin		see external file, bohlingfavoriteproperties.css
+	defines the margins of a block of text
+	9. float			see external file, bohlingfavoriteproperties.css
+	which direction a particular column will float to 
+	10. width 		see external file, bohlingfavoriteproperties.css
+	The percentage of a section the column will take up
+	11. padding		see external file, bohlingfavoriteproperties.css
+	How much space to the side of an element
+	13. transition		see external file, bohlingfavoriteproperties.css
+	How long it will take a transition to occur
+	14. border		see external file, bohlingfavoriteproperties.css
+	The border of 	a certain element can be filled in a certain color
+	15. border-radius	see external file, bohlingfavoriteproperties.css
+	how thick the border is
+	16.  height*		see external file, bohlingfavoriteproperties.css
+	17. position*		see external file, bohlingfavoriteproperties.css
+	18. animation-name*  see external file, bohlingfavoriteproperties.css
+	19. animation duration*see external file, bohlingfavoriteproperties.css
+	20. animation-itiration-count* see external file, bohlingfavoriteproperties.css
+	21. animation-direction* see this file line 150
+	22. transform*			see external file, bohlingfavoriteproperties.css
+	23. text decoration*	see this file lines 108-111
+-->
+
+<head>
+	<title>Branden Bohling CIS255 - CSS Properties </title>
+	<link rel="stylesheet" href="bohlingfavoritepropertiesmobile.css" media="screen and (max-width:480px)" />
+	<link rel="stylesheet" href="bohlingfavoritepropertiesdesktop.css" media="screen and (min-width:481px)" /> 	
+</head>
+<body>
+	<a href="https://github.com/branden-bohling/cis255"><button class="btn" > Go to my Github </button> </a>
+	<header>
+		<h1 align="center">Branden Bohling</h1>
+		<h2 align="center">A demonstration of CSS Properties</h2>
+	</header>
+	
+	<div class="columnSidebar" style="background-color:white;">
+	<section title="Reference to the sections of this site">
+		<h2>Reference</h2>
+		<p><a href="#fontPropertyTarget">Font Property</a> </p>
+		<p><a href="#textDecorationTarget">Text Decoration Property</a> </p>
+		<p><a href="#backgroundImageTarget">Background Image Property</a> </p>
+		<p><a href="#animationTarget">Animation Property</a> </p>
+		<p><a href="#transformTarget">Transform Property</a> </p>
+		<p><a href="#devToolsTarget">Chrome dev tools </a> </p>
+	</section>
+	</div>
+	
+	<div class="columnIntro">
+	<section title="Introduction">
+			<h3>Introduction</h3>
+			<p > 
+				My name is Branden, I am a Computer Science Student at SVSU.
+				On this page, I will demonstrate 20 CSS properties, and discuss 5. 
+			</p>
+		</section>
+	</div> 
+		
+	<div class="columnPic">
+	<section title="Picture of me at NCAA XC Regionals">
+			<img width="150%" src="regionalmeet.jpg" />
+		</section>
+	</div> 
+	<main>
+		
+		<section title="fontProperty">
+		<h3>The <i>font</i> Property</h3>
+		<a name="fontPropertyTarget"></a>
+		<p><strong>Discussion:</strong>. 
+			The font property does exactly what it sounds like, allows for different types of fonts 
+			and different properties of fonts to exist for a section of a webpage. There are multiple 
+			settings for the fonts in CSS. These settings include size, bold and italics..
+			</p>			
+			<br/>
+			<strong>Demonstration:</strong>
+			<p id = "couriorNewFont"> This font is Courior New. It is a monospace font, meaning each 
+			character takes up exactly the same amount of space on screen. Because not all fonts are compatible
+			with every web browser,	when declaring CSS fonts
+			one should use several font names as a fallback system in order to ensure the most users 
+			will see the desired text. This fallback system typically ends with a "font family" a generic
+			type of font which is the most similar to the one desired. For example: for the Courior new 
+			font, the fallback would be a similar looking font called "Courior" and then finally just 
+			the generic family "monospace". I have also increased the size of the font and increased
+			the "strength" property to bold.
+			</p>
+		</section>
+		<hr />
+		
+		<section title="textDecoration">
+		<a name="textDecorationTarget"></a>
+		<h3>The <i>text-decoration</i> Property</h3>
+			<p><strong>Discussion:</strong>. 
+			The text decoration property allows for underlines, overlines and crossthroughs for pieces of text. 
+			This property is useful if one wants to emphasize a certain word or cross it out. Many of the ways 
+			one can decorate text in CSS are fun or jump out in cool ways. For example, text decoration alse
+			allows for wavy or dotted lines.
+			</p>			
+			<p><strong>Demonstration:</strong></p>
+			<p style = "text-decoration: underline wavy green;"> This text has a wavy underline </p>
+			<p style = "text-decoration: line-through dotted yellow;"> This text has a dotted yellow cross through </p>
+			<p style = "text-decoration: overline purple;"> This text has a purple overline </p>
+		</section>
+		<hr />
+				
+		<section title="BackgroundImage">
+			<a name="backgroundImageTarget"></a>
+			<h3>The <i>background-image</i> Property</h3>
+			<p><strong>Discussion:</strong>. The background-image property allows for an image to be put in the
+			place of the background. Typically this image is repeated over and over or "tiled" in order to stretch
+			to the appropriate area of where the background is needed, so it is best to use an image which is already
+			repetitive and will look good if repeated. For this I used a 
+			<a href="https://www.istockphoto.com/vector/abstract-technology-binary-code-background-digital-binary-data-and-secure-data-gm811239886-131288319">stock image</a> 
+			freely available online.
+			<div class="background">
+  
+			<div class="tbox">
+				<p>In this demonstration I made the image somewhat transluscent, as well as placed a secondary box 
+				around the transluscent image so the text is easier to read</p>
+			</div>
+			</div>
+
+		</section>
+		
+		<hr />
+		
+		
+		<section title="Animation">
+			<a name="animationTarget"></a>
+			<h3>The <i>animation</i> Property:</h3>
+			<p><strong>Discussion:</strong> The animation property allows for simple animations to be created. 
+			Typically such animations would be created through flash, which is now outdated and resource intensive. 
+			In this animation, CSS draws a box 100x100 pixels and transitions between the colors of my favorite sports team,
+			the Denver Broncos. It will move in the direction of a square and each cycle of the animation will go for 3 seconds,
+			this will repeat 5 times.
+			</p>
+			<div class="anibox">
+			</div>
+			<br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<p> Here is the same animation, made to play in reverse </p>
+			<div class="anibox" style="animation-direction: reverse">
+			</div>
+			<br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		</section>
+		
+		<hr />
+		
+		<section title="Transform">
+			<a name="transformTarget"></a>
+			<h3>The <i>transform</i> Property:</h3>
+			<p><strong>Discussion:</strong> The transform property allows for elements to be shifted, tilted or scaled in 
+			certain directions. This particular box has been rotated 25 degrees and skewed in the x direction 20 degrees.
+			</p>
+			<div class="transformbox">I'm feeling a little off balance...</div>
+		<br>
+				<hr />
+
+		<section title="ChromeDevTools">
+			<a name="devToolsTarget"></a>
+			<h3>Chrome DevTools</h3>
+			<p>Here's a screenshot of the web page title changing color to purple using Chrome DevTools.</p>	
+			<img width="100%" src="chromedevtools.PNG" />
+
+		</section>
+	
+	</main>
+	
+	<footer>
+		<p> Branden Bohling CIS255</p>
+	</footer>
+
+</body>
+</html>
+
